@@ -11,7 +11,7 @@
                     <i class=" text-zinc-800 ri-pencil-line"></i>
                 </span>
                 <div class="w-28 h-28 bg-zinc-200 rounded-full overflow-hidden">
-                    <img class="h-full w-full object-cover"
+                    <img class="h-full w-full object-cover object-center"
                     src="/images/uploads/<%= user.profileImage %>"alt="" srcset="">
                 </div>
             </div>
@@ -25,11 +25,11 @@
         <div class="cards flex flex-wrap gap-8  mt-12 px-10 ">
             <div class="card">
                 <div class="w-52 h-40 bg-zinc-200 rounded-lg overflow-hidden">
-                    <img class="h-full w-full  items-center object-cover"
+                    <img class="h-full w-full object-cover object-top "
                         src="/images/uploads/<%=user?.posts[0]?.image %>"
                         alt="" srcset="">
                 </div>
-                <a href="/show/posts" class=" inline-block text-xl font-semibold mt-3">Your uploaded pins</a>
+                <a href="/show/posts" class=" inline-block text-xl  font-semibold mt-3">Your uploaded pins</a>
                 <h5 class="text-sm font-medium opacity-60"><%= user.posts.length %></h5>
             </div>
 
