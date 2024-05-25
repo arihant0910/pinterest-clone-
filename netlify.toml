@@ -1,4 +1,9 @@
+[build]
+  publish = "public"
+  command = "npm run build"  # Ensure you have a build command if needed
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
